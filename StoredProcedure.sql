@@ -8,7 +8,7 @@ BEGIN
 END $$ 
 DELIMITER ;
 
-select @total as Total_Countries;
+select @total as Total_employees;
 
 
 
