@@ -1,14 +1,19 @@
-DELIMITER $$
+DELIMITER //
 
-CREATE PROCEDURE Totalemployees(out total int)
+CREATE PROCEDURE countemployees(
+	in total float
+
+)
 BEGIN
     
-    SET total = (select count(*) from employees);
-    
-END $$ 
+select count(*) into total from employees;
+select total;    
+END // 
 DELIMITER ;
 
-select @total as Total_employees;
+
+call countemployees(10);
+
 
 
 

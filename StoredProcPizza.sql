@@ -1,7 +1,0 @@
-DELIMITER $$
-CREATE PROCEDURE SetPIZZA(
-	inout pizza
-
-
-
-)
